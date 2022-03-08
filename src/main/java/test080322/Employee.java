@@ -24,6 +24,11 @@ public class Employee
          String Message = "Phone invalid";
          throw new IllegalArgumentException(Message);
      }
+     else if(age < 18 )
+     {
+         String Message = "age invalid";
+         throw new IllegalArgumentException(Message);
+     }
     this. name = name;
     this. PPS = PPS;
     this.phone = phone;
