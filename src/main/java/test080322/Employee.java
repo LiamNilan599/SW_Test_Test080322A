@@ -19,6 +19,11 @@ public class Employee
          String Message = "PPS invalid";
          throw new IllegalArgumentException(Message);
      }
+     else if(phone.length() != 7)
+     {
+         String Message = "Phone invalid";
+         throw new IllegalArgumentException(Message);
+     }
     this. name = name;
     this. PPS = PPS;
     this.phone = phone;

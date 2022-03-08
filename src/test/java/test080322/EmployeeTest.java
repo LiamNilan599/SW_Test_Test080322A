@@ -25,4 +25,10 @@ public class EmployeeTest
         Employee test = new Employee("Mrs","Brandy","345fds","0984321", "Full-time", 24);
         assertEquals("345fds", test.getPPS());
     }
+    @Test
+    void ValidPhone()
+    {
+        Employee test = new Employee("Mrs","Brandy","345fds","0984321", "Full-time", 24);
+        assertEquals("0984321", test.getPhone());
+    }
 }
