@@ -24,6 +24,11 @@ public class Employee
          String Message = "Phone invalid";
          throw new IllegalArgumentException(Message);
      }
+     else if(!type.equals("Full-time") && !type.equals("Part-time"))
+     {
+         String Message = "type invalid";
+         throw new IllegalArgumentException(Message);
+     }
      else if(age < 18 )
      {
          String Message = "age invalid";

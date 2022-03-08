@@ -32,6 +32,12 @@ public class EmployeeTest
         assertEquals("0984321", test.getPhone());
     }
     @Test
+    void ValidType()
+    {
+        Employee test = new Employee("Mrs","Brandy","345fds","0984321", "Full-time", 24);
+        assertEquals("Full-time", test.getType());
+    }
+    @Test
     void ValidAge()
     {
         Employee test = new Employee("Mrs","Brandy","345fds","0984321", "Full-time", 24);
