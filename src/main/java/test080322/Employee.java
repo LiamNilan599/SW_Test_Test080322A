@@ -1,5 +1,5 @@
 package test080322;
-
+// Liam Nilan g00366621 08 03 22
 public class Employee
 {
     String title, name, PPS, phone, type;
@@ -34,13 +34,14 @@ public class Employee
          String Message = "age invalid";
          throw new IllegalArgumentException(Message);
      }
-    this. name = name;
-    this. PPS = PPS;
-    this.phone = phone;
-    this.type = type;
-    this.age = age;
-
-
+     else
+     {
+         this. name = name;
+         this. PPS = PPS;
+         this.phone = phone;
+         this.type = type;
+         this.age = age;
+     }
     }
 
     public String getTitle() {
